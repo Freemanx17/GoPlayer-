@@ -1,0 +1,123 @@
+/* إعدادات عامة */
+@import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
+
+body {
+  font-family: 'Amiri', serif;
+  background-color: #4a90e2;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* لمنع السحب للتحديث */
+}
+
+.container {
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+}
+
+/* شاشة العرض */
+video {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* خانة البحث وزر التشغيل */
+.input-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#videoURL {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#playButton {
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* الأزرار الإضافية */
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+#showLinks, #toggleTheme {
+  flex: 1;
+  margin: 0 5px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#showLinks {
+  background-color: #2ecc71;
+}
+
+#toggleTheme {
+  background-color: #f1c40f;
+}
+
+/* اسم التطبيق */
+.app-name {
+  background-color: #fff;
+  color: #4a90e2;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+/* الروابط */
+.links {
+  display: none;
+  margin-bottom: 20px;
+}
+
+.links p {
+  background-color: #fff;
+  color: #4a90e2;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 5px 0;
+  cursor: pointer; /* إضافة المؤشر */
+}
+
+/* النص السفلي */
+.footer {
+  font-size: 14px;
+  color: #ddd;
+}
+
+/* الوضع الليلي */
+body.dark {
+  background-color: #121212;
+  color: #fff;
+}
+
+body.dark .app-name {
+  background-color: #333;
+  color: #fff;
+}
+
+body.dark #videoURL {
+  background-color: #333;
+  color: #fff;
+}
+
+body.dark .links p {
+  background-color: #333;
+  color: #fff;
+}
